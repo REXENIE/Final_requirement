@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <title> Sticky Navigation Bar | CodingLab </title> 
+    <link rel="stylesheet" href="safety.css">
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="home.html">Exquisite Autos</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="safety.html">Safety</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+  <div class="text">
+    <p><h2>Safety first!</h2>
+    <p>Safety is paramount when it comes to operating a vehicle. Whether you're a seasoned driver or a novice on the road, adopting and practicing essential safety measures can significantly reduce the risk of accidents and ensure a secure driving experience. In this guide, we'll explore key safety measures that every driver should prioritize to promote road safety. Maintaining your vehicle in top condition is the first line of defense against unforeseen issues on the road. Schedule routine check-ups for brakes, tires, lights, and fluids. Address any unusual sounds or malfunctions promptly to prevent potential safety hazards. Regular maintenance not only enhances the longevity of your car but also contributes to a safer driving experience. The simplest yet most effective safety measure is wearing your seatbelt. Ensure that all passengers, including those in the back seat, are buckled up before you start the engine. Seatbelts are proven to reduce the severity of injuries in the event of a collision and are a fundamental aspect of road safety. Adhering to traffic rules and regulations is a fundamental aspect of safe driving. Obey speed limits, traffic signals, and road signs. Yield the right of way when required, and avoid aggressive driving behaviors. Respecting traffic rules not only protects you but also contributes to the overall safety of everyone on the road. Distracted driving is a leading cause of accidents. Avoid using your phone, eating, or engaging in activities that take your attention away from the road. If you need to make a call or use your phone's GPS, pull over to a safe location. Keeping your focus on driving is a simple yet powerful safety measure.Adopting defensive driving techniques can significantly reduce the risk of accidents. Stay vigilant, anticipate potential hazards, and maintain a safe following distance from the vehicle in front of you. Be aware of your surroundings, use mirrors effectively, and remain prepared to react to unexpected situations. Correctly adjusted mirrors are crucial for maintaining a clear view of your surroundings. Ensure that your rearview and side mirrors are properly aligned to eliminate blind spots. Regularly check and adjust them before starting your journey. Communication is key on the road. Use your turn signals to indicate your intentions to other drivers. Whether changing lanes or making a turn, signaling allows for smoother traffic flow and reduces the likelihood of collisions. Adapt your driving to weather conditions. Slow down in rain, snow, or fog, and increase your following distance. Ensure your headlights and taillights are on in low visibility conditions. Being mindful of weather-related challenges enhances safety during adverse driving conditions.Familiarize yourself with your vehicle's safety features, such as ABS. In emergency braking situations, ABS helps maintain steering control, preventing wheel lockup. Understanding and utilizing these features appropriately can make a significant difference in critical moments. Be prepared for unexpected situations. Keep an emergency kit in your car with essentials like a first aid kit, flashlight, jumper cables, and basic tools. Know how to change a flat tire and have contact information for roadside assistance readily available.
+      </p>
+  </div>
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>

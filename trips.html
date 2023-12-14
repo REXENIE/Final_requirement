@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <title> Sticky Navigation Bar | CodingLab </title> 
+    <link rel="stylesheet" href="trips.css">
+   </head>
+   <body>
+    <nav>
+      <div class="nav-content">
+        <div class="logo">
+          <a href="home.html">Exquisite Autos</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+          <li><a href="maintenance.html">Maintenance</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+          <li><a href="guide.html">Guide</a></li>
+          <li><a href="trends.html">Trends</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="safety.html">Safety</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="home"></section>
+    <div class="text">
+      <p><h2>Memories</h2>
+      <p>Embarking on a road trip is a thrilling adventure that offers the freedom to explore diverse landscapes, cultures, and experiences. Whether you're planning a weekend getaway or a cross-country expedition, the journey itself becomes an integral part of the experience. In this guide, we'll explore the art of crafting memorable road trips, from planning the route to embracing spontaneity along the way. The foundation of any successful road trip lies in meticulous route planning. Consider the scenic routes, points of interest, and attractions along the way. Online mapping tools can help optimize your itinerary, providing information on travel time, fuel stops, and noteworthy landmarks. Allow room for spontaneity, leaving space in your schedule to explore unexpected gems that may arise. Efficient packing is crucial for a comfortable and enjoyable road trip. Create a checklist that includes essentials such as clothing, toiletries, snacks, and entertainment. Don't forget important documents like your driver's license, registration, and insurance. Pack a roadside emergency kit, including a spare tire, jumper cables, and basic tools, to ensure you're prepared for unexpected situations. Enhance your journey with a carefully curated playlist, audiobooks, or podcasts. Invest in a reliable GPS navigation system or use navigation apps to stay on track. For families, consider packing games or activities to keep passengers entertained during the drive. Having a mix of entertainment options ensures that everyone enjoys the ride. Research and book accommodations in advance for overnight stays, especially during peak travel seasons. Plan strategic pit stops for meals and sightseeing along the way. Embrace the charm of local diners, roadside attractions, and scenic viewpoints. These unplanned stops often lead to some of the most memorable moments of the trip. While planning is essential, leave room for flexibility and spontaneity. Serendipitous discoveries often occur when you deviate from the planned route. Allow time for detours to explore intriguing towns, parks, or landmarks that capture your interest. The beauty of a road trip lies in the unexpected adventures that unfold when you go off the beaten path. Document your journey through photos, videos, or a travel journal. Capture the beauty of landscapes, the uniqueness of roadside attractions, and the joy of shared experiences. These memories become a cherished part of the road trip and serve as a reminder of the adventures you've had along the way. Prioritize safety by adhering to traffic rules, taking regular breaks to avoid driver fatigue, and staying informed about weather conditions. Ensure your car is in good condition before hitting the road, and conduct routine safety checks during the trip. Traveling safely contributes to a stress-free and enjoyable road trip experience.</p>
+    </div>
+    <script>
+    let nav = document.querySelector("nav");
+      window.onscroll = function() {
+        if(document.documentElement.scrollTop > 20){
+          nav.classList.add("sticky");
+        }else {
+          nav.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
