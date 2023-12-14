@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <title> Sticky Navigation Bar | CodingLab </title> 
+    <link rel="stylesheet" href="maintenance.css">
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="home.html">Exquisite Autos</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="safety.html">Safety</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+  <div class="text">
+    <p><h2>Gear  Up!</h2>
+    <p>Car maintenance is a critical aspect of ensuring the longevity and optimal performance of your vehicle. Regular upkeep not only enhances safety on the road but also contributes to better fuel efficiency and overall driving experience. In this article, we will delve into the importance of car maintenance and outline key tasks that every vehicle owner should prioritize.
+      </p>
+    <br><p>Routine checks are the foundation of effective car maintenance. These include inspecting fluid levels such as engine oil, coolant, brake fluid, and transmission fluid. Regularly checking and topping up these fluids helps prevent major engine issues and ensures that your vehicle runs smoothly. Tire pressure is another crucial element; maintaining the recommended pressure not only extends tire life but also enhances fuel efficiency. Additionally, inspecting the brake system, lights, and battery regularly can prevent unexpected breakdowns and ensure your car's safety features are in optimal condition. Scheduled servicing is a proactive approach to car maintenance that involves adhering to the manufacturer's recommended service intervals. This typically includes oil changes, air filter replacements, and comprehensive inspections by trained professionals. Following the service schedule outlined in your car's manual helps address potential problems before they escalate, saving you from costly repairs and maintaining the overall health of your vehicle. Promptly addressing any issues or unusual sounds in your vehicle is crucial. Ignoring warning signs can lead to more extensive and expensive problems down the road. If you notice unusual noises, vibrations, or warning lights, it's advisable to consult with a qualified mechanic to diagnose and resolve the issue promptly. Timely attention to problems not only ensures your safety on the road but also prevents the deterioration of various components, saving you money in the long run.
+      </p>
+  </div>
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>

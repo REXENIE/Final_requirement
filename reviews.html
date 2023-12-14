@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <title> Sticky Navigation Bar | CodingLab </title> 
+    <link rel="stylesheet" href="reviews.css">
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="home.html">Exquisite Autos</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="safety.html">Safety</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+  <div class="text">
+    <p><h2>Hands on the wheels!</h2>
+    <p>Reviews from individuals fortunate enough to experience hypercars firsthand provide fascinating insights into the world of automotive excellence. These testimonials often read like exhilarating tales, recounting the visceral thrills and unparalleled sensations that come with sitting behind the wheel of these high-performance machines.
+
+      Enthusiasts commonly express their awe at the sheer acceleration of hypercars. The seamless merging of cutting-edge technology and powerful engines creates an unmatched feeling of speed and agility. Many reviewers highlight the immediate and relentless acceleration, often describing it as a breathtaking experience that defies the laws of physics.
+      
+      The handling and responsiveness of hypercars also draw effusive praise. Drivers share stories of navigating tight corners with precision, feeling the vehicle respond to every subtle input. The advanced aerodynamics and state-of-the-art suspension systems contribute to an unparalleled driving experience, making maneuvers feel effortless and inspiring confidence at high speeds.
+      
+      </p>
+  </div>
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>
