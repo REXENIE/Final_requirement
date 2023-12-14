@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <title> Sticky Navigation Bar | CodingLab </title> 
+    <link rel="stylesheet" href="guide.css">
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="home.html">Exquisite Autos</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="safety.html">Safety</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+  <div class="text">
+    <p><h2>Beyond Limits</h2>
+    <p>For maximum performance unlock the engines output performance by reading your cars guide. For maximum information visit your local store or local distributors. </p>
+    
+  </div>
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>

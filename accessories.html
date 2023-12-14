@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <title> Sticky Navigation Bar | CodingLab </title> 
+    <link rel="stylesheet" href="accessories.css">
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="home.html">Exquisite Autos</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="safety.html">Safety</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+  <div class="text">
+    <p><h2>Trinkets!</h2>
+    <p>Embarking on a journey doesn't have to be just a means of transportation; it can be an experience tailored to your preferences and needs. Car accessories play a pivotal role in personalizing and enhancing your driving adventure. From advanced tech gadgets to stylish interior additions, here's a guide to must-have car accessories that will elevate your drive to a whole new level. Embrace the future with cutting-edge technology. Invest in a high-quality dash cam for added security and peace of mind. Bluetooth-enabled devices, such as hands-free calling kits and music streaming adapters, ensure a safer and more connected driving experience. Smartphone mounts and wireless chargers are indispensable for keeping your devices within reach and fully charged on the go. Make your time behind the wheel a comfortable and enjoyable experience with interior-focused accessories. Consider upgrading your car seats with ergonomic cushions or stylish seat covers. All-weather floor mats not only protect your car's interior but also add a touch of practical elegance. Ambient lighting kits can transform the mood within your vehicle, creating a personalized and inviting atmosphere. Give your car a facelift with exterior accessories that combine style and functionality. Customized license plate frames, sleek side mirrors, and aerodynamic spoilers are just a few options to enhance your car's aesthetics. For added convenience, invest in roof racks or cargo carriers to expand your storage capacity, perfect for road trips or outdoor adventures. Long drives become more enjoyable with in-car entertainment options. Upgrade your audio system with premium speakers or a high-quality sound system. Rear-seat entertainment systems, such as DVD players or tablet mounts, are perfect for keeping passengers entertained during extended journeys. Prioritize safety with accessories designed to protect you and your vehicle. Parking sensors, blind-spot mirrors, and tire pressure monitoring systems contribute to safer driving. Emergency kits, including first aid supplies and roadside assistance tools, are invaluable additions that provide peace of mind in unexpected situations.</p>
+  </div>
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>
